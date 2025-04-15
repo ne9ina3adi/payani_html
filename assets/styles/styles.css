@@ -155,7 +155,7 @@ nav {
   top: 4px;
   right: -19px;
 }
-main {
+.section-1 {
   display: flex;
   justify-content: center;
 }
@@ -168,7 +168,7 @@ main .right {
   margin-top: 40px;
   width: 445px;
 }
-main .right button {
+.standard-button {
   width: 206px;
   color: white;
   font-family: "vazir";
@@ -179,9 +179,11 @@ main .right button {
   padding-right: 24px;
   padding-bottom: 8px;
   padding-left: 24px;
+  border-width: 0;
   gap: 8px;
   background: #032340;
-  justify-content: space-evenly;
+  justify-content: center;
+
   display: flex;
 }
 main .right p {
@@ -244,4 +246,140 @@ main .left .statistics div.image-container {
 }
 main .left .statistics .content {
   margin-right: 20px;
+}
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 50px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+.img-section-2 {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  width: 392px;
+}
+.img-section-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.box-color span {
+  color: #fa541c;
+}
+.box-color {
+  background-color: #021526;
+  color: #f9f9f9;
+  padding: 15px;
+}
+.products-info {
+  width: 282px;
+}
+.products-info h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.products-info p {
+  font-size: 16px;
+  font-weight: 700px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.products-info button {
+  background-color: #fa541c;
+  font-size: 16px;
+  color: #f9f9f9;
+  width: 309px;
+}
+
+.section-3 {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-image: url(../images/background-img-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-card {
+  position: absolute;
+  top: 198px;
+  right: 200px;
+}
+
+.text-card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+  vertical-align: middle;
+  margin-bottom: 22px;
+}
+
+.text-card p {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: right;
+  vertical-align: middle;
+}
+.discounts-container {
+  position: relative;
+}
+.discounts-header {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 45%;
+  top: -30px;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 16px;
+}
+.discounts-section {
+  margin-top: 80px;
+  padding-top: 60px;
+  display: flex;
+  background-color: #fff7f4;
+  justify-content: center;
+  gap: 24px;
+}
+.discounts-section > .standard-button {
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  top: 10px;
+  left: 140px;
+}
+.standard-card {
+  width: 366px;
+  height: 467px;
+  border-radius: 16px;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  border: 1px solid #ededed;
+}
+.standard-card h5 {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  line-height: 40px;
+}
+.standard-card p {
+  font-weight: 100;
+  font-size: 12px;
+  text-align: right;
+}
+.standard-card img.main-img {
+  width: 101%;
+  height: auto;
+  display: block;
+}
+.standard-card div {
+  padding: 10px;
 }
