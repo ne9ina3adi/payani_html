@@ -12,25 +12,25 @@
 body {
   direction: rtl;
   font-family: vazir;
+  overflow-x: hidden;
 }
-
 .header-box {
   position: relative;
 }
 
-.header-1 {
+.header-text {
   background-color: #032340;
   text-align: center;
   width: 100%;
   height: 40px;
   z-index: 20;
 }
-.header-1 p {
+.header-text p {
   color: #ffffff;
-  width: 303;
-  height: 20;
+  width: 303px;
+  height: 20px;
   font-weight: 400;
-  size: 14px;
+  font-size: 14px;
   padding: 10px 0;
 }
 
@@ -38,7 +38,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 1224px;
   margin: auto;
 }
@@ -48,7 +47,6 @@ body {
   height: 32px;
 }
 .fitland {
-  color: #868686;
   color: #868686;
   display: flex;
   flex-direction: column;
@@ -66,12 +64,13 @@ body {
   height: 48px;
   margin: 30px;
   box-sizing: 1px;
-
   background-color: #f9f9f9;
   border: solid 2px #cbcbcb;
   border-radius: 16px;
 }
-
+.menu-icon {
+  display: none;
+}
 .search-icon {
   position: absolute;
   right: 30px;
@@ -79,7 +78,7 @@ body {
   margin-top: 20px;
   top: 15px;
   color: #fa541c;
-  z-index: 20;
+  z-index: 22;
   font-size: 20px;
 }
 .action-buttons {
@@ -123,18 +122,15 @@ body {
 nav {
   width: 1224px;
   margin: auto;
-  /* height: 28px; */
   height: 64px;
-  margin-top: 8px;
   display: flex;
   justify-content: space-between;
   border-radius: 16px;
   padding-top: 16px;
-  padding-right: 10px;
+  padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 40px;
-  background-color: #032340;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
 }
 .right-items li {
   display: inline-block;
@@ -155,7 +151,7 @@ nav {
   top: 4px;
   right: -19px;
 }
-.section-1 {
+.store-container {
   display: flex;
   justify-content: center;
 }
@@ -183,12 +179,10 @@ main .right {
   gap: 8px;
   background: #032340;
   justify-content: center;
-
   display: flex;
 }
 main .right p {
   color: #606060;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
@@ -201,7 +195,6 @@ main .right h2 {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
-
   color: #032340;
 }
 main .right h3 {
@@ -247,7 +240,11 @@ main .left .statistics div.image-container {
 main .left .statistics .content {
   margin-right: 20px;
 }
-.section-2 {
+.content span {
+  color: #194165;
+  font-size: 20px;
+}
+.new-products {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -256,13 +253,13 @@ main .left .statistics .content {
   margin-top: 200px;
   flex-wrap: wrap;
 }
-.img-section-2 {
+.img-new-products {
   border-radius: 12px;
   overflow: hidden;
   background-color: #f4f4f4;
   width: 392px;
 }
-.img-section-2 img {
+.img-new-products img {
   width: 100%;
   height: auto;
   display: block;
@@ -296,7 +293,7 @@ main .left .statistics .content {
   width: 309px;
 }
 
-.section-3 {
+.exercise-equipment {
   position: relative;
   height: 600px;
   width: 100%;
@@ -452,11 +449,32 @@ main .left .statistics .content {
 .camp-container {
   background-image: url(../images/camp.svg);
 }
+.news-container {
+  position: relative;
+}
+.news-header {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 45%;
+  top: -10px;
+  font-size: 20px;
+  white-space: nowrap;
+  font-weight: 400px;
+}
+.news-section {
+  margin-top: 80px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 .news-card {
   width: 564px;
   height: 515px;
   border-radius: 16px;
   border-width: 1px;
+  margin-bottom: 78px;
 }
 .news-card h5 {
   font-weight: 700;
@@ -505,6 +523,10 @@ main .left .statistics .content {
   max-width: 359px;
   font-weight: 700;
   font-size: 24px;
+  color: #032340;
+}
+.option-container h5 {
+  color: #032340;
 }
 footer {
   width: 100%;
@@ -603,6 +625,7 @@ footer .footer {
   top: 20px;
   width: 47px;
   height: 26px;
+  border-radius: 4px;
 }
 .footer-second-row .left-column {
   display: flex;
@@ -612,4 +635,174 @@ footer .footer {
   align-content: flex-start;
   justify-content: flex-start;
   gap: 10px;
+}
+.signs {
+  display: flex;
+  gap: 24px;
+}
+.left-footer p,
+.right-footer p {
+  color: #adadad;
+  font-size: 10px;
+}
+@media (max-width: 390px) {
+  * {
+    max-width: 100% !important;
+  }
+
+  .header-text {
+    width: 100%;
+    display: block;
+  }
+  .header-text p {
+    font-size: 10px;
+  }
+  nav {
+    display: none;
+  }
+  .main-header {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .search-box input {
+    width: 76%;
+  }
+
+  .action-buttons {
+    display: none;
+  }
+  .fitland {
+    width: calc(100vw - 20px);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .search-box {
+    margin: 0;
+  }
+  .search-box i {
+    top: -13px;
+    right: 47px;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .search-box input {
+    margin: 0 40px;
+  }
+  .fitland h1 {
+    display: none;
+  }
+
+  .store-container .left {
+    display: none;
+  }
+  .store-container .right p {
+    font-size: 10px;
+  }
+
+  .store-container .right h2,
+  .store-container .right h3 {
+    font-size: 18px;
+  }
+  main .right {
+    width: calc(100vw - 146px);
+    padding: 10px;
+  }
+  .under-foot {
+    display: none;
+  }
+}
+.search-box-product {
+  position: relative;
+}
+.search-box-product input {
+  padding-right: 40px;
+  background-color: #ffffff;
+  border-color: #ededed;
+}
+.login-set-product {
+  width: 72px;
+  height: 48px;
+}
+.products-container {
+  margin-right: 420px;
+  margin-left: 108px;
+}
+.products-menu {
+  display: flex;
+  justify-content: flex-start;
+}
+.products-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding: 10px;
+}
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-column img {
+  width: 288px;
+  height: 280px;
+}
+.products-text {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  background-color: #f9f9f9;
+  margin-bottom: 24px;
+  padding: 8px;
+  height: 118px;
+}
+.sidebar {
+  position: relative;
+  bottom: 1700px;
+}
+.filter-box {
+  width: 288px;
+  height: 406px;
+  padding: 20px;
+  border: 1px solid #cbcbcb;
+  border-radius: 16px;
+}
+.filter-box h3 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.filter-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.filter-section {
+  margin-top: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px;
+}
+.switch input {
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
 }

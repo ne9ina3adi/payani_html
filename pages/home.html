@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>فروشگاه فیتلند</title>
     <link rel="stylesheet" href="../assets/styles/styles.css" />
     <link
       rel="stylesheet"
@@ -13,13 +13,18 @@
   <body>
     <header>
       <section class="header-box">
-        <div class="header-1">
+        <div class="header-text">
           <p>با عضویت در فیتلند اولین ارسال را مهمون ما باش:)</p>
         </div>
         <div class="main-header">
           <div class="fitland">
-            <img class="logo-image" src="../assets/images/logo.svg" />
+            <div>
+              <img class="logo-image" src="../assets/images/logo.svg" />
+            </div>
             <h1>فروشگاه لوازم ورزشی فیت لند</h1>
+            <div>
+              <img class="menu-icon" src="../assets/images/menu.png" />
+            </div>
           </div>
           <div class="search-box">
             <i class="fas fa-search search-icon"></i>
@@ -55,7 +60,7 @@
       </nav>
     </header>
     <main>
-      <section class="section-1">
+      <section class="store-container">
         <div class="right">
           <p>راحت و مطمئن خرید کنید!</p>
           <h2>همراه تو در مسیر سلامتی</h2>
@@ -79,7 +84,7 @@
               <img src="../assets/images/shop.svg" />
             </div>
             <div class="content">
-              <p>+ ۳۰۰</p>
+              <p><span>+ ۳۰۰</span></p>
               <p>محصولات متنوع</p>
             </div>
           </div>
@@ -88,7 +93,7 @@
               <img src="../assets/images/like.svg" />
             </div>
             <div class="content">
-              <p>۹۵%</p>
+              <p><span>۹۵%</span></p>
               <p>رضایت مشتری</p>
             </div>
           </div>
@@ -97,21 +102,21 @@
               <img src="../assets/images/calendar.svg" />
             </div>
             <div class="content">
-              <p>۴ روز</p>
+              <p><span>۴ روز</span></p>
               <p>از خرید تا دریافت</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-2">
-        <div class="img-section-2">
+      <section class="new-products">
+        <div class="img-new-products">
           <img src="../assets/images/firstpic.png" />
           <div class="box-color">
             <h5>جدیدترین تخفیفات فصل برند پوما</h5>
             <p><span>50% </span>تخفیف روی تمام محصولات</p>
           </div>
         </div>
-        <div class="img-section-2">
+        <div class="img-new-products">
           <img src="../assets/images/secondpic.png" />
           <div class="box-color">
             <h5>جدیدترین تخفیفات فصل برند نایک</h5>
@@ -130,7 +135,7 @@
           </button>
         </div>
       </section>
-      <section class="section-3">
+      <section class="exercise-equipment">
         <div class="text-card">
           <p>برای حال خوب</p>
           <h4>لوازم ایروبیک و تناسب اندام بگیر</h4>
@@ -277,16 +282,16 @@
           </div>
         </div>
       </section>
-      <section class="section-2 top-sale-container">
-        <div class="img-section-2">
-          <img src="../assets/images/firstpic.png" />
+      <section class="new-products top-sale-container">
+        <div class="img-new-products">
+          <img src="../assets/images/top-selling/pooma.png" />
           <div class="box-color">
             <h5>جدیدترین تخفیفات فصل برند پوما</h5>
             <p><span>50% </span>تخفیف روی تمام محصولات</p>
           </div>
         </div>
-        <div class="img-section-2">
-          <img src="../assets/images/secondpic.png" />
+        <div class="img-new-products">
+          <img src="../assets/images/top-selling/nike.png" />
           <div class="box-color">
             <h5>جدیدترین تخفیفات فصل برند نایک</h5>
             <p><span>50%</span> تخفیف روی تمام محصولات</p>
@@ -306,11 +311,11 @@
       </section>
       <section class="wheels-container camp-container"></section>
 
-      <section class="about-shoes">
-        <div class="shoes-header">
+      <section class="news-container">
+        <div class="news-header">
           <h3>جدیدترین ها در اخبار ورزش</h3>
         </div>
-        <div class="shoes-section">
+        <div class="news-section">
           <div class="standard-card news-card">
             <img class="main-img" src="../assets/images/news-1.png" />
             <div>
@@ -345,15 +350,15 @@
       <section class="option-container">
         <div class="option-cards">
           <img src="../assets/images/truck-tick.png" />
-          ارسال سریع
+          <h5>ارسال سریع</h5>
         </div>
         <div class="option-cards">
           <img src="../assets/images/paypal.png" />
-          پرداخت قسطی
+          <h5>پرداخت قسطی</h5>
         </div>
         <div class="option-cards">
           <img src="../assets/images/home.png" />
-          پرداخت درب منزل
+          <h5>پرداخت درب منزل</h5>
         </div>
         <p>با بیش از ده سال سابقه فروش لوازم ورزشی و لباس های ورزشی</p>
       </section>
@@ -445,11 +450,14 @@
         <div class="right-footer">
           <img src="../assets/images/signs/security-safe.png" />
 
-          تمامی حقوق مادی و معنوی این وب‌سایت برای مجموعه فیت‌لند محفوظ می‌باشد.
+          <p>
+            تمامی حقوق مادی و معنوی این وب‌سایت برای مجموعه فیت‌لند محفوظ
+            می‌باشد.
+          </p>
         </div>
         <div class="left-footer">
           <img src="../assets/images/signs/buildings.png" />
-          طراحی شده توسط گروه 8 دوره طراحی رابط کاربری احسان عزتی
+          <p>طراحی شده توسط گروه 8 دوره طراحی رابط کاربری احسان عزتی</p>
         </div>
       </div>
     </footer>
